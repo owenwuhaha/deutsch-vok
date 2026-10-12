@@ -4,13 +4,13 @@
 
 # 德剧词 · DeutschVok
 
-### 看德剧，学地道德语。
+### 看德剧学地道德语，一键生成一个能离线刷的 HTML 单词卡学习器。
 
 作者：疯狂的豇豆 · [www.crazyowen.cn](https://www.crazyowen.cn)
 
-给出德语剧集/电影名和集数，把这一集的德语词库加入你的通用 HTML 学习器。
+> 看德剧时学到的地道表达，往往最实用也最难背。把一部剧/电影/播客的德语字幕丢给**德剧词**，它会把那一集的高频实用词抽出来，变成一个 HTML 单词卡学习器——**双击就能开刷**，离线可用、不用装 Anki、不用联网。
 
-[下载体验页](https://github.com/owenwuhaha/deutsch-vok/raw/refs/heads/main/examples/demo.html) · [安装到 Codex](#安装到-codex) · [使用方法](#使用)
+[在线体验示例页（8 个原创德语句）](https://github.com/owenwuhaha/deutsch-vok/raw/refs/heads/main/examples/demo.html) · [安装方式](#安装) · [使用](#使用)
 
 ![MIT License](https://img.shields.io/github/license/owenwuhaha/deutsch-vok?style=flat-square)
 ![通用学习器](https://img.shields.io/badge/output-reusable%20HTML-235a47?style=flat-square)
@@ -18,7 +18,21 @@
 
 </div>
 
-**德剧词**从指定德语剧集的真实德语字幕中挑选实用表达，加入同一个通用 HTML 学习器。第一次创建学习器并加入首集后，后续每集会合并到这个文件；打开页面即可切换词库练习。默认用翻卡自评，也可以切换到根据中文提示输入德语、自动判题和重练。
+---
+
+**一句话**：输入「德剧词 + 剧名集数」，输出一个 `~/Documents/deutsch-vok.html`——把这一集的高频实用德语词抽出来，附词性（der/die/das）、复数、语法备注，并支持德语朗读；默认翻卡自评，也可切成「输入回忆」自动判题错词重练。以后每看一集，新词自动合并回同一文件，**一个 HTML 文件就是你的德语词库**。
+
+**适合谁**：正在看德剧 / 德语电影 / 德语播客并想顺带积累词汇的人；备考 Goethe / TestDaF / telc / ÖSD / DSH 想用真题句练词的人；希望**完全离线、不装任何软件**就能刷单词的人。
+
+**优势**：
+
+| 你拿到的 | 说明 |
+|---|---|
+| **地道语感** | 词库全部来自真实剧集/电影/播客，而非教科书例句 |
+| **零门槛** | 双击 HTML 即用，不装 Anki、不联网、不需服务器 |
+| **德语细节全** | 每条名词带 `der/die/das` 与复数（如 `der Bogen → die Bögen`），可分动词按实际拆开的词形挖空（如 `aufgeben → gib … auf`），格/时态/成语等写入语法备注 |
+| **按你的等级筛词** | 默认 CEFR B1–B2，说明考试与级别后会按对应范围筛选，并可难度回访上下调 |
+| **随时可用** | 离线朗读（设备 `de-DE` 语音），错词自动排回队列重练 |
 
 > 示例页使用 8 个原创德语句子演示功能，不来自任何剧集。
 

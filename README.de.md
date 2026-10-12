@@ -4,13 +4,13 @@
 
 # 德剧词 · DeutschVok
 
-### Lerne authentisches Deutsch aus deutschen Serien.
+### Verwandle deutsche Serien-, Film- & Podcast-Untertitel in ein offline-fähiges HTML-Lernkartendeck.
 
 Autor: 疯狂的豇豆 · [www.crazyowen.cn](https://www.crazyowen.cn)
 
-Gib Name und Folge einer deutschen Serie oder eines Films an, und DeutschVok fügt den Wortschatz dieser Folge deiner universellen HTML-Lernseite hinzu.
+> Die idiomatischen Wendungen, die man aus einer deutschen Serie mitnimmt, sind oft die nützlichsten – und die schwersten zu merken. Gib eine deutsche Serie, einen Film oder einen Podcast in **DeutschVok** und es extrahiert die High-Frequency-Wörter dieser Folge in ein HTML-Lernkartendeck, das du per Doppelklick öffnest: offline, ohne Anki, ohne Netz.
 
-[Demo herunterladen](https://github.com/owenwuhaha/deutsch-vok/raw/refs/heads/main/examples/demo.html) · [In Codex installieren](#in-codex-installieren) · [Nutzung](#nutzung)
+[Live-Demo öffnen (8 originale deutsche Sätze)](https://github.com/owenwuhaha/deutsch-vok/raw/refs/heads/main/examples/demo.html) · [Installation](#installation) · [Nutzung](#nutzung)
 
 ![MIT-Lizenz](https://img.shields.io/github/license/owenwuhaha/deutsch-vok?style=flat-square)
 ![Wiederverwendbares HTML](https://img.shields.io/badge/output-wiederverwendbares%20HTML-235a47?style=flat-square)
@@ -18,7 +18,21 @@ Gib Name und Folge einer deutschen Serie oder eines Films an, und DeutschVok fü
 
 </div>
 
-**DeutschVok** wählt nützliche Ausdrücke aus den echten deutschen Untertiteln einer angegebenen deutschen Serie und fügt sie derselben universellen HTML-Lernseite hinzu. Nach dem ersten Erstellen und der ersten Folge werden spätere Folgen in dieselbe Datei zusammengeführt; öffne die Seite, um zwischen den Decks zu wechseln und zu üben. Standardmäßig wird mit Lernkarten selbst bewertet; du kannst auch auf „Eingabe-Abfrage" (Deutsch aus einer chinesischen Vorgabe eintippen) mit automatischer Bewertung und Wiederholung umschalten.
+---
+
+**In einem Satz**: Tippe „DeutschVok + Serie + Folge", und es erzeugt `~/Documents/deutsch-vok.html` – die praxisnahen High-Frequency-Wörter dieser Folge, jeweils mit Artikel (der/die/das), Plural und Grammatiknotizen plus deutscher Vorlesefunktion. Standardmäßig Lernkarten-Selbstbewertung; wechselbar auf Eingabe-Abfrage mit automatischer Bewertung und Wiederholung. Jede neue Folge wird in dieselbe Datei zusammengeführt – **eine HTML-Datei ist deine deutsche Wortbank**.
+
+**Für wen**: Leute, die Deutsch über Serien/Filme/Podcasts lernen und dabei Vokabular aufbauen; Prüfungsvorbereitung (Goethe / TestDaF / telc / ÖSD / DSH) mit echten Sätzen; alle, die Lernkarten wollen – **ohne Installation, komplett offline**.
+
+**Was anders ist**:
+
+| Was du bekommst | Hinweis |
+|---|---|
+| **Echte Sprache** | Jede Karte stammt aus echten Untertiteln, nicht aus Lehrbuch-Beispielen |
+| **Kein Aufwand** | HTML per Doppelklick – ohne Anki, ohne Server, ohne Internet |
+| **Deutsch-Details** | Substantive zeigen `der/die/das` + Plural (`der Bogen → die Bögen`); trennbare Verben clozen in der tatsächlichen Trennform (`aufgeben → gib … auf`); Kasus/Zeiten/Redewendungen in Grammatiknotizen |
+| **Niveau-passend** | Standard CEFR B1–B2; gib Prüfung & Niveau an, dann wird entsprechend gefiltert – mit Schwierigkeits-Feedback |
+| **Jederzeit verfügbar** | Offline-Vorlese (`de-DE`), falsche Antworten werden automatisch neu eingereiht |
 
 > Die Demo-Seite verwendet 8 originale deutsche Sätze, um die Funktionen zu demonstrieren; sie stammt aus keiner Serie.
 

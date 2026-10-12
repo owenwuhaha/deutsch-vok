@@ -4,13 +4,13 @@
 
 # 德剧词 · DeutschVok
 
-### Learn authentic German from German TV series.
+### Turn German TV, film & podcast subtitles into an offline HTML flashcard deck.
 
 Author: 疯狂的豇豆 · [www.crazyowen.cn](https://www.crazyowen.cn)
 
-Give the name and episode number of a German series or film, and DeutschVok adds that episode's German vocabulary to your universal HTML study page.
+> The idiomatic phrases you pick up from a German show are often the most useful — and the hardest to memorize. Feed a German series, film, or podcast into **DeutschVok** and it extracts that episode's high-frequency words into an HTML flashcard deck you can open with a double-click: offline, no Anki, no network.
 
-[Download demo](https://github.com/owenwuhaha/deutsch-vok/raw/refs/heads/main/examples/demo.html) · [Install to Codex](#install-to-codex) · [Usage](#usage)
+[Open the live demo (8 original German sentences)](https://github.com/owenwuhaha/deutsch-vok/raw/refs/heads/main/examples/demo.html) · [Install](#install) · [Usage](#usage)
 
 ![MIT License](https://img.shields.io/github/license/owenwuhaha/deutsch-vok?style=flat-square)
 ![Reusable HTML](https://img.shields.io/badge/output-reusable%20HTML-235a47?style=flat-square)
@@ -18,7 +18,21 @@ Give the name and episode number of a German series or film, and DeutschVok adds
 
 </div>
 
-**DeutschVok** picks useful expressions from the real German subtitles of a specified German series and adds them to the same universal HTML study page. After the first creation and the first episode, later episodes are merged into the same file; open the page to switch decks and practice. Flashcard self-rating is the default; you can also switch to typed recall (type German from a Chinese prompt) with automatic grading and retry.
+---
+
+**In one line**: type “DeutschVok + show + episode” and it produces `~/Documents/deutsch-vok.html` — that episode's high-frequency practical German words, each with article (der/die/das), plural form and grammar notes, plus German TTS. Self-rated flashcards by default; switch to typed recall with auto-grading and retry. Each new episode merges back into the same file, so **one HTML file is your German word bank**.
+
+**Who it's for**: people studying German through shows/films/podcasts and wanting to build vocabulary along the way; Goethe / TestDaF / telc / ÖSD / DSH exam prep using real sentences; anyone who wants flashcards with **zero install, fully offline**.
+
+**Why it's different**:
+
+| What you get | Notes |
+|---|---|
+| **Authentic language** | Every card comes from real subtitles, not textbook lines |
+| **Zero friction** | Double-click the HTML — no Anki, no server, no internet |
+| **German detail** | Nouns show `der/die/das` + plural (`der Bogen → die Bögen`); separable verbs cloze on the actual split form (`aufgeben → gib … auf`); cases/tenses/idioms in grammar notes |
+| **Level-matched** | Defaults to CEFR B1–B2; give it your exam & level and it filters accordingly, with difficulty check-back |
+| **Always available** | Offline TTS (`de-DE`), wrong answers auto-requeued for retry |
 
 > The demo page uses 8 original German sentences to demonstrate the features; it does not come from any series.
 
