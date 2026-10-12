@@ -50,13 +50,61 @@ Each vocabulary card includes the German word (with gender), IPA, contextual mea
 
 The German level determines the vocabulary range: default CEFR B1–B2; if the user states an exam and level, filtering prioritizes that exam's range, e.g. Goethe-Zertifikat A1–C2, TestDaF, telc Deutsch, ÖSD, DSH. After generation the Agent asks whether the vocabulary felt too hard, right, or too easy, and can shift the range down or up based on feedback.
 
-## Install to Codex
+## Installation
+
+Clone this repo into the Skills directory of your platform. Paths and activation per platform:
+
+### Install to Codex
 
 On macOS / Linux:
 
 ```bash
 git clone --depth 1 https://github.com/owenwuhaha/deutsch-vok.git ~/.codex/skills/deutsch-vok
 ```
+
+### Install to WorkBuddy
+
+User-level (applies to all projects):
+
+```bash
+git clone --depth 1 https://github.com/owenwuhaha/deutsch-vok.git ~/.workbuddy/skills/deutsch-vok
+```
+
+Project-level (current workspace only, into the project's `.workbuddy/skills/`):
+
+```bash
+git clone --depth 1 https://github.com/owenwuhaha/deutsch-vok.git <your-project>/.workbuddy/skills/deutsch-vok
+```
+
+After cloning, restart WorkBuddy or just invoke `$deutsch-vok` in a chat.
+
+### Install to Doubao (豆包)
+
+- **Doubao web/client (workbench)**: Open "自定义技能 / 技能管理" (Custom Skills) → create a skill → paste the full content of `SKILL.md` into the skill content area → set the name "德剧词 / DeutschVok" and trigger words (e.g. "德剧词", "德语词汇") → save and enable.
+- **Doubao TUI (CLI)**: place it in the global skills directory and restart the client:
+
+```bash
+git clone --depth 1 https://github.com/owenwuhaha/deutsch-vok.git ~/.doubao/skills/deutsch-vok
+# or ~/.agents/skills/deutsch-vok
+```
+
+### Install to Hermes Agent
+
+On [hermes.crazyowen.cn](https://hermes.crazyowen.cn), register or create an Agent (complete the community verification flow), then paste the full `SKILL.md` content into its "persona / instructions" area, set the name to "德剧词 / DeutschVok" and the description from SKILL.md's `description`. Once saved, the Agent gains German episode vocabulary extraction capability.
+
+### Install to OpenClaw
+
+Place it in the shared skills directory (applies to all Agents on this machine), then restart the gateway:
+
+```bash
+git clone --depth 1 https://github.com/owenwuhaha/deutsch-vok.git ~/.openclaw/skills/deutsch-vok
+openclaw gateway restart   # or start a new session: /new
+openclaw skills list       # verify it loaded
+```
+
+Invoke: type `/deutsch-vok` in chat, or just describe your need in natural language.
+
+---
 
 If already installed, enter the skill directory and run `git pull` to update. After installing, use it in a new task like:
 

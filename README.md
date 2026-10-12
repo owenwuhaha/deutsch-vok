@@ -50,13 +50,61 @@ flowchart LR
 
 德语分级决定词汇范围：默认 CEFR B1–B2；如果用户说明考试和级别，会优先按对应考试范围筛选，例如 Goethe-Zertifikat A1–C2、TestDaF、telc Deutsch、ÖSD、DSH。生成后 Agent 会询问词汇是偏难、合适还是偏简单，并可按反馈把范围下调或上调。
 
-## 安装到 Codex
+## 安装
 
-macOS / Linux 上执行：
+把本仓库克隆到对应平台的 Skills 目录即可。各平台路径与激活方式如下。
+
+### 安装到 Codex
+
+macOS / Linux：
 
 ```bash
 git clone --depth 1 https://github.com/owenwuhaha/deutsch-vok.git ~/.codex/skills/deutsch-vok
 ```
+
+### 安装到 WorkBuddy
+
+用户级（对所有项目生效）：
+
+```bash
+git clone --depth 1 https://github.com/owenwuhaha/deutsch-vok.git ~/.workbuddy/skills/deutsch-vok
+```
+
+项目级（仅当前工作区，放入项目 `.workbuddy/skills/`）：
+
+```bash
+git clone --depth 1 https://github.com/owenwuhaha/deutsch-vok.git <你的项目>/.workbuddy/skills/deutsch-vok
+```
+
+克隆后重启 WorkBuddy，或在对话中直接调用 `$deutsch-vok`。
+
+### 安装到 豆包
+
+- **豆包网页版 / 客户端（工作台）**：打开「自定义技能 / 技能管理」→ 新建技能 → 把本仓库 `SKILL.md` 的全部内容粘贴到技能内容区 → 填写名称「德剧词 / DeutschVok」与触发词（如「德剧词」「德语词汇」）→ 保存并启用。
+- **Doubao TUI（命令行版）**：放入全局技能目录后重启客户端即可：
+
+```bash
+git clone --depth 1 https://github.com/owenwuhaha/deutsch-vok.git ~/.doubao/skills/deutsch-vok
+# 或 ~/.agents/skills/deutsch-vok
+```
+
+### 安装到 Hermes Agent
+
+在 [hermes.crazyowen.cn](https://hermes.crazyowen.cn) 注册或创建一个 Agent（按社区流程完成验证），在其「人设 / 指令」区把本仓库 `SKILL.md` 的内容粘贴进去，名称设为「德剧词 / DeutschVok」、描述取自 SKILL.md 的 `description`。保存后该 Agent 即具备德语剧集词汇提取能力。
+
+### 安装到 OpenClaw
+
+放入共享技能目录（对当前机器所有 Agent 生效），然后重启网关：
+
+```bash
+git clone --depth 1 https://github.com/owenwuhaha/deutsch-vok.git ~/.openclaw/skills/deutsch-vok
+openclaw gateway restart   # 或新开会话 /new
+openclaw skills list       # 验证已加载
+```
+
+调用：在对话中输入 `/deutsch-vok`，或直接用自然语言描述需求。
+
+---
 
 如果已安装，进入技能目录执行 `git pull` 更新。安装后在新任务里这样使用：
 

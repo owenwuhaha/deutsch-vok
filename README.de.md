@@ -50,13 +50,61 @@ Jede Vokabelkarte enthält das deutsche Wort (mit Artikel), IPA, kontextuelle Be
 
 Das Deutsch-Niveau bestimmt den Vokabelbereich: Standard CEFR B1–B2; gibt der Nutzer Prüfung und Niveau an, wird dieser Bereich priorisiert, z. B. Goethe-Zertifikat A1–C2, TestDaF, telc Deutsch, ÖSD, DSH. Nach der Erzeugung fragt der Agent, ob der Wortschatz zu schwer, passend oder zu leicht war, und kann den Bereich anhand des Feedbacks nach oben oder unten anpassen.
 
-## In Codex installieren
+## Installation
+
+Klone dieses Repo in das Skills-Verzeichnis deiner Plattform. Pfade und Aktivierung je Plattform:
+
+### In Codex installieren
 
 Unter macOS / Linux:
 
 ```bash
 git clone --depth 1 https://github.com/owenwuhaha/deutsch-vok.git ~/.codex/skills/deutsch-vok
 ```
+
+### In WorkBuddy installieren
+
+Benutzerebene (für alle Projekte):
+
+```bash
+git clone --depth 1 https://github.com/owenwuhaha/deutsch-vok.git ~/.workbuddy/skills/deutsch-vok
+```
+
+Projektebene (nur aktueller Workspace, in das `.workbuddy/skills/`-Verzeichnis des Projekts):
+
+```bash
+git clone --depth 1 https://github.com/owenwuhaha/deutsch-vok.git <dein-projekt>/.workbuddy/skills/deutsch-vok
+```
+
+Nach dem Klonen WorkBuddy neu starten oder `$deutsch-vok` direkt im Chat aufrufen.
+
+### In Doubao (豆包) installieren
+
+- **Doubao Web/Client (Workbench)**: Öffne „自定义技能 / 技能管理" (Eigene Skills) → Skill erstellen → füge den gesamten Inhalt von `SKILL.md` in das Skill-Inhaltsfeld ein → Name „德剧词 / DeutschVok" und Auslösewörter setzen (z. B. „德剧词", „德语词汇") → speichern und aktivieren.
+- **Doubao TUI (CLI)**: in das globale Skills-Verzeichnis legen und Client neu starten:
+
+```bash
+git clone --depth 1 https://github.com/owenwuhaha/deutsch-vok.git ~/.doubao/skills/deutsch-vok
+# oder ~/.agents/skills/deutsch-vok
+```
+
+### In Hermes Agent installieren
+
+Auf [hermes.crazyowen.cn](https://hermes.crazyowen.cn) einen Agent registrieren oder erstellen (den Community-Verifizierungsablauf abschließen) und den gesamten `SKILL.md`-Inhalt in dessen „Persona / Anweisungen" einfügen; Name „德剧词 / DeutschVok", Beschreibung aus dem `description`-Feld von SKILL.md. Nach dem Speichern kann der Agent deutsche Serien-Vokabeln extrahieren.
+
+### In OpenClaw installieren
+
+In das gemeinsame Skills-Verzeichnis legen (gilt für alle Agents auf diesem Rechner), dann Gateway neu starten:
+
+```bash
+git clone --depth 1 https://github.com/owenwuhaha/deutsch-vok.git ~/.openclaw/skills/deutsch-vok
+openclaw gateway restart   # oder neue Sitzung: /new
+openclaw skills list       # Laden verifizieren
+```
+
+Aufruf: `/deutsch-vok` im Chat eingeben oder den Wunsch in natürlicher Sprache beschreiben.
+
+---
 
 Falls bereits installiert, wechsle in das Skill-Verzeichnis und führe `git pull` aus, um zu aktualisieren. Nach der Installation verwende es in einer neuen Aufgabe so:
 
