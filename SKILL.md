@@ -1,6 +1,11 @@
 ---
 name: deutsch-vok
+version: 1.0.0
+display_name: 德剧词
+display_name_en: DeutschVok
 description: 德剧词，从德语影视/剧集/电影/播客的真实德语字幕中提取适合 CEFR 等级与德语考试（Goethe-Zertifikat / TestDaF / telc / ÖSD / DSH）的词汇，加入通用 HTML 学习器；默认翻卡自评，可选输入回忆。用于“德剧词”“看德剧学德语”“德语词汇”“Deutsch lernen”“德语剧”“Deutsch Serie Vokabeln”等请求。
+description_zh: 德剧词（DeutschVok）把德语影视剧、电影、播客的真实德语字幕变成可随时学习的词汇卡。给出一部德语剧集和集数，它就把这一集的德语词条（含词性 der/die/das、复数、语法备注与 de-DE 朗读）加入同一个独立 HTML 学习器；默认翻卡自评，可选输入回忆，无需 Anki、服务器或运行时。
+description_en: DeutschVok turns real German subtitles from TV series, films and podcasts into a reusable, standalone HTML vocabulary trainer. Give it a German show and episode, and it adds that episode's words (with article, plural, grammar notes and de-DE TTS) into one HTML file — flashcard self-rating by default, with optional typed recall, no Anki/server/runtime needed.
 ---
 
 # 德剧词
