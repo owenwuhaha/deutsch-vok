@@ -1,8 +1,4 @@
-<details align="center">
-<summary>English</summary>
-
-**DeutschVok** turns German TV episodes, films and podcast transcripts into vocabulary decks inside one reusable HTML study page. The first use creates the page and adds the first deck; later episodes are merged into the same file. Flashcard self-rating is the default, with optional typed recall and automatic retry. No Anki, server, or runtime dependency is required. German-only: nouns carry der/die/das and plural forms, separable verbs and case notes are marked.
-</details>
+**🇨🇳 中文** · [🇺🇸 English](README.en.md) · [🇩🇪 Deutsch](README.de.md)
 
 <div align="center">
 
