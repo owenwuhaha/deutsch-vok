@@ -1,0 +1,4 @@
+interface:
+  display_name: "德剧词"
+  short_description: "从德语影视/剧集/播客真实德语字幕提取词汇，按 CEFR 与德语考试分级，自动合并到通用 HTML 学习器，可选输入回忆"
+  default_prompt: "使用 $deutsch-vok 为我把指定德语剧集/电影的词汇加入通用学习器，并生成更新后的 HTML。"

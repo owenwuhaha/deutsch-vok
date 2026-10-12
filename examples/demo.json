@@ -1,0 +1,111 @@
+{
+  "title": "德剧词 · 交互体验",
+  "deck_id": "demo:original-examples:v1:de",
+  "language": "Deutsch",
+  "exam_target": "",
+  "level_target": "B1",
+  "selection_basis": "原创演示句，仅用于展示学习器功能",
+  "difficulty_feedback": "",
+  "sources": [
+    "原创演示句，仅展示学习页功能，不属于任何真实剧集。"
+  ],
+  "note": "演示版 · 8 个原创德语例句。正式使用时会从你指定剧集的真实德语字幕中选词。",
+  "cards": [
+    {
+      "term": "Geduld",
+      "artikel": "die",
+      "plural": "",
+      "grammar": "不可数，无复数；常用 die Geduld verlieren（失去耐心）",
+      "answers": ["Geduld", "die Geduld"],
+      "meaning": "耐心",
+      "ipa": "/ɡəˈdʊlt/",
+      "sentence": "Ich habe allmählich die Geduld verloren.",
+      "translation": "我渐渐失去了耐心。",
+      "targets": ["Geduld"]
+    },
+    {
+      "term": "ansehen",
+      "artikel": "",
+      "plural": "",
+      "grammar": "可分动词（trennbar）；sich etw. ansehen 代词 sich 回位",
+      "answers": ["ansehen", "sich ansehen"],
+      "meaning": "观看；打量",
+      "ipa": "/ˈanzəːən/",
+      "sentence": "Wir sehen uns den Film heute Abend an.",
+      "translation": "我们今晚看这部电影。",
+      "targets": ["sehen", "an"]
+    },
+    {
+      "term": "eilig",
+      "artikel": "",
+      "plural": "",
+      "grammar": "固定搭配 es eilig haben（赶时间）",
+      "answers": ["eilig"],
+      "meaning": "匆忙的；紧急的",
+      "ipa": "/ˈaɪ̯lɪç/",
+      "sentence": "Hast du es heute sehr eilig?",
+      "translation": "你今天很赶时间吗？",
+      "targets": ["eilig"]
+    },
+    {
+      "term": "Bogen",
+      "artikel": "der",
+      "plural": "die Bögen",
+      "grammar": "成语 einen Bogen um etw. machen（绕开/回避某事）",
+      "answers": ["einen Bogen um etwas machen", "Bogen"],
+      "meaning": "弓；弧形",
+      "ipa": "/deːɐ̯ ˈboːɡn̩/",
+      "sentence": "Ich mache einen Bogen um diese Diskussion.",
+      "translation": "我绕开这场争论。",
+      "targets": ["Bogen", "um"]
+    },
+    {
+      "term": "aufgeben",
+      "artikel": "",
+      "plural": "",
+      "grammar": "可分动词；宾语为第四格（Akkusativ）",
+      "answers": ["aufgeben"],
+      "meaning": "放弃；交（寄）出",
+      "ipa": "/ˈaʊ̯fɡeːbn̩/",
+      "sentence": "Gib dein Ziel nicht auf!",
+      "translation": "别放弃你的目标！",
+      "targets": ["Gib", "auf"]
+    },
+    {
+      "term": "sich freuen",
+      "artikel": "",
+      "plural": "",
+      "grammar": "sich freuen über + Akk.（为…高兴）",
+      "answers": ["sich freuen über", "sich freuen"],
+      "meaning": "感到高兴",
+      "ipa": "/frɔɪ̯ən/",
+      "sentence": "Sie freut sich über das Geschenk.",
+      "translation": "她为这份礼物感到高兴。",
+      "targets": ["freut", "über"]
+    },
+    {
+      "term": "Gras",
+      "artikel": "das",
+      "plural": "die Gräser",
+      "grammar": "成语 ins Gras beißen（俚语：死/完蛋）",
+      "answers": ["ins Gras beißen", "Gras"],
+      "meaning": "草",
+      "ipa": "/ɡʁaːs/",
+      "sentence": "Der alte Hund hat ins Gras gebissen.",
+      "translation": "那条老狗死了（俚语）。",
+      "targets": ["Gras", "gebissen"]
+    },
+    {
+      "term": "zustande kommen",
+      "artikel": "",
+      "plural": "",
+      "grammar": "多用于完成体/被动；常与 sein 构成完成时",
+      "answers": ["zustande kommen"],
+      "meaning": "达成；产生",
+      "ipa": "/tsuˈʃtantə ˈkɔmən/",
+      "sentence": "Wie ist dieser Plan zustande gekommen?",
+      "translation": "这个计划是怎么达成的？",
+      "targets": ["zustande", "gekommen"]
+    }
+  ]
+}
